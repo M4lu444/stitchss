@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilo&stitch</title>
+    <link rel="icon" href="fotos/stitch_ volta.png">
+     <link rel="stylesheet" href="estilo-lilo.css">
+     <link rel="stylesheet" href="quadro.css">
+     <a href="galeria.html" target="_blank">Galeria</a>
+     <a href="expiencias.html" target="_blank">Locais</a>
+     <a href="quadro.html" target="_blank">experiências</a>
+     <a href="cadrastro.html" target="_blank">cadrastro</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="fotos/havai.png" style="width:100%">
+      <div class="text">lilo</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="fotos/stitch.png" style="width:100%">
+      <div class="text">stitch</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="fotos/motoca.png" style="width:100%">
+      <div class="text">ohana</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+  
+      <script>
+          var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block"; 
+        dots[slideIndex-1].className += " active";
+      }
+
+      </script>
+
+
+  
+  <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none"; 
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1} 
+          slides[slideIndex-1].style.display = "block"; 
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+  </script>
+    <header>
+        <nav>
+            <a href="#origem">Origem</a>
+            <a href="#personagens">Personagens</a>
+            <a href="#curiosidades">Curiosidades</a>
+            <a href="#filmes">Filmes e séries</a>
+            <a href="galeria.html" target="_blank">Galeria</a>
+            <a href="quadro.html" target="_blank">experiências</a>
+            <a href="expiencias.html" target="_blank">locais</a>
+            <a href="cadrastro.html" target="_blank">ingresso</a>
+            <a href="#contatos">contatos</a>
+        </nav> 
+
+<div id="logo"><div id="logo">
+    <img src="fotos/logo.png" alt="" width="600"  id="opacidade" >
+</div>
+
+
+       
+
+    </header>
+
+       <h1>LILO & STITCH </h1>
+
+       <h2 id="origem">Origem</h2>
+ 
+     <div class="esquerda">
+    <img src="fotos/havai.png" alt="" width="600" class="opacidade">
+<figcaption>LILO & STITCH</figcaption> 
+</div>
+
+
+
+<p> 
+    O conceito inicial veio de Chris Sanders, que criou o personagem Stitch nos anos 1980 para um livro infantil que nunca foi publicado. Quando a Disney quis explorar histórias mais íntimas e menos grandiosas, Sanders propôs a ideia de um alienígena deslocado que encontra uma família na Terra. Originalmente, a história se passaria no meio-oeste dos EUA, mas a equipe decidiu mudar para o Havaí para dar um toque único e incorporar a cultura havaiana.
+
+</p>
+
+
+<h2 id="personagens">Personagens</h2>
+
+<div id="direita"><img src="fotos/stitch.png" alt="" width="600" class="opacidade" >
+<figcaption>Ohana</figcaption>
+</div>
+
+
+
+    <h5>Personagens Principais</h5>
+   <p> Lilo Pelekai – Uma garota havaiana excêntrica e amorosa que adota Stitch, acreditando que ele seja um cachorro. Ela tem dificuldades em se socializar, mas valoriza profundamente sua família e a ideia de ohana.
+    Stitch (Experiência 626) – Um experimento alienígena criado para destruição, mas que aprende sobre amor e família ao lado de Lilo. Ele é travesso, mas tem um grande coração.
+    Nani Pelekai – A irmã mais velha de Lilo, que assume o papel de cuidadora após a morte dos pais. Apesar dos desafios, ela faz de tudo para manter a família unida.
+    Cobra Bubbles – Um assistente social de aparência séria e intimidadora, que avalia se Nani pode continuar cuidando de Lilo. Ele tem um passado misterioso ligado a assuntos governamentais.
+    
+    <h5>Personagens Secundários</h5>
+
+    <p>Dr. Jumba Jookiba – O cientista alienígena que criou Stitch. Inicialmente, ele quer capturar Stitch, mas depois se torna um aliado.
+    Agente Wendy Pleakley – Um alienígena magro de um olho só, parceiro de Jumba, encarregado de capturar Stitch sem expor a existência de alienígenas na Terra.
+    Capitã Gantu – Um capitão da Federação Galáctica que vê Stitch como uma ameaça e tenta capturá-lo à força.
+    Grande Conselho Galáctico – A líder da Federação Galáctica, que inicialmente ordena a prisão de Stitch, mas depois o deixa ficar na Terra com Lilo.
+    David Kawena – Um amigo próximo de Nani, gentil e sempre disposto a ajudar a família Pelekai. Ele também tem interesse romântico por Nani.
+    Mertle Edmonds – Uma colega de Lilo que age como sua rival, zombando dela por ser diferente.</p>
+
+
+
+<h2 id="">Curiosidades</h2>
+
+<div class="esquerda"><img src="fotos/surf.png" alt="" width="600" class="opacidade">
+<figcaption>Ohana</figcaption>
+</div>
+
+<p> 
+  
+        <h5>Stitch foi dublado pelo próprio diretor</h5> 
+
+   
+    <li>O co-diretor e roteirista Chris Sanders também dublou Stitch. Ele queria que a voz do personagem fosse única, criando o tom rouco e estranho que se tornou sua marca registrada.</li>
+
+        <h5>Subversão do padrão das princesas Disney  </h5>
+  
+ 
+    <li> Diferente de outras animações da época, Lilo & Stitch não seguiu a tradição de contos de fadas com princesas. Em vez disso, foca na relação entre irmãs e no conceito de ohana (família).</li>
+
+
+    <h5>Cobra Bubbles pode ter sido um agente do governo </h5>
+
+ 
+    <li>O assistente social Cobra Bubbles tem um visual e atitude que lembram um agente secreto. Em uma cena, ele menciona que já lidou com alienígenas, sugerindo que trabalhou para o governo ou CIA.</li>
+ 
+   
+ 
+    <h5>Roteiro original era mais sombrio </h5>
+    <li>O filme inicialmente mostrava Lilo como uma criança ainda mais solitária e introspectiva. A cena em que ela alimenta um peixe porque acredita que ele controla o tempo enfatiza sua necessidade de encontrar sentido após a perda dos pais.</li>
+ 
+    <h5>Visual inicial de Stitch era muito diferente</h5>
+     <li>O design original de Stitch o fazia parecer mais reptiliano. Para torná-lo mais fácil de aceitar como um animal de estimação, seu visual foi modificado para algo mais fofo e expressivo.</li>
+ 
+    <h5>Relação realista entre Lilo e Nani  </h5>
+    <li>Os diretores se inspiraram em interações reais de irmãos para criar os diálogos e brigas entre Lilo e Nani, tornando a relação mais autêntica.</li>
+    <h5>Live-action de Lilo & Stitch </h5>
+     <li>A Disney está desenvolvendo um live-action para o Disney+, onde Stitch será criado por computação gráfica. Algumas mudanças na história são especuladas, mas a essência será mantida.</li>
+ 
+<h5>Stitch é um dos personagens mais populares da Disney  </h5>
+    <li>Especialmente no Japão, Stitch tem uma enorme popularidade e uma infinidade de produtos licenciados.
+    - Aparece frequentemente em parques da Disney e em jogos como Kingdom Hearts e Disney Infinity.</li>
+ 
+ <h5>Mensagens importantes do filme</h5>  
+
+<li> O valor da família (ohana), independentemente de laços sanguíneos.</li>
+<li>A importância de aceitar as diferenças e encontrar seu lugar no mundo.</li>
+<li>A ideia de que não somos definidos pelo nosso passado e sempre podemos mudar.</li>
+
+     </p>
+
+<h2 id="filmes">Filmes e séries</h2>
+
+<p class="lista">
+    
+    
+    &diams;Lilo & Stitch (2002)
+    &diams;Lilo & Stitch: A Série (2003-2006)
+    &diams;Stitch! O Filme (2003)
+    &diams;Lilo & Stitch 2: Stitch Deu Defeito (2005)
+    &diams;Leroy & Stitch (2006)
+    &diams;Stitch! (2008-2011) - Anime japonês
+    &diams;Stitch & Ai (2017) - Versão chinesa
+   
+</p>
+ 
+<h2 id="experiencia">Oringem e experiencia</h2>
+
+<p class="lista">
+    <p>O Dr. Jumba criou 628 experiências antes de ser capturado pela Federação Galáctica. Cada uma delas tem habilidades únicas, projetadas para causar caos e destruição.
+        <br> Quando Stitch caiu na Terra, as outras experiências ainda estavam em cápsulas de desidratação, mas ao longo da série, elas foram ativadas e espalhadas pelo Havaí. Lilo e Stitch então passaram a capturá-las e dar a cada uma um propósito novo e útil.</p>
+    <h5>principais experiencias</h5>
+
+<ol>626 (Stitch) – O mais avançado e forte, criado para destruição, mas se tornou bom graças a Lilo</ol>
+<ol>625 (Reuben) – Parecido com Stitch, mas preguiçoso. Adora fazer sanduíches e trabalha para Gantu antes de mudar de lado.</ol>
+<ol>624 (Angel) – Interesse romântico de Stitch. Sua voz pode transformar experiências boas em más e vice-versa</ol>
+<ol>627 (Evile) – Mais forte que Stitch, mas muito brincalhão e incapaz de levar batalhas a sério.</ol>
+<ol>221 (Sparky) – Controla eletricidade e foi a primeira experiência a ser capturada por Lilo e Stitch.</ol>
+</p>
+
+
+<h2 id="contatos">Nós sigam nas redes sociais</h2>
+ 
+<div id="redes">
+   <a href="https://www.facebook.com/Disney/?locale=pt_BR"
+   target="_blank" class="icone">
+    <img src="fotos/logo-facebook.png" alt="50" width="90" class="icone">
+</a> 
+    
+
+    <a href="https://www.instagram.com/disney" target="_blank" class="icone">
+     <img src="fotos/logo-instagram.png" alt="50" width="90" class="icone">
+    </a>
+    
+
+  <a href="https://www.youtube.com/disney" target="_blank" class="icone" >
+    <img src="fotos/logo-youtube.png" alt="50" width="90" class="icone">
+  </a>
+
+</div>
+
+
+<div id="voltar">
+    <a href="#logo"> 
+        <img src="fotos/stitch_ volta.png" alt="50" width="60"> </a>
+   
+</div>
+
+
+<footer>
+    &copy; Lilo & Stitch |2025
+</footer>
+</body>
+
+</html>
