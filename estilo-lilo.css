@@ -1,0 +1,351 @@
+body{
+    margin: 0px;
+    background-color: #a5c5f7;
+    }
+    
+    nav {
+    text-align: center;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    position: fixed;
+    margin: 20px 0px 20px 0px;
+    }
+
+
+    nav a {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    background-color: #3d6cee;
+    color: #e5a5ee;
+    padding: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    }
+    
+
+
+    h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    text-align: center;
+    color: #1849eb;
+    }   
+    
+    h2{
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    text-align: center;
+    background-color:#3d6cee;
+    color:#e5a5ee;
+    padding: 20px;
+    clear: both;
+    border-radius: 40px;
+    }
+    
+    
+    p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0px 25px 0px 25px;
+    color: #25558b;
+    } 
+    h5{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+        text-align: center;
+        color: #0340c4;
+    
+    }
+     
+    
+figcaption{ 
+    font-family:Roboto, Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 20;
+    /*text-align: center;*/
+    }
+    
+    .lista{
+    font-family:Roboto, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    }
+    
+    #redes{
+    text-align:center;
+    margin: 50px;
+    }
+
+    #redes a {
+    text-decoration: none;
+    }
+    
+    #voltar{
+    text-align: right;
+    margin: 30px;
+    }
+
+    li{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+        text-align: center;
+        color:  #25558b; 
+    }
+
+    ol{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+        text-align: center;
+        color:  #25558b; 
+    }
+    
+    #logo{
+        text-align: center;
+    }
+   
+    .esquerda{ 
+        text-align: left;
+        margin-left:25px;
+        margin-right: 25px;
+        float: left;
+        
+        }
+        
+        #direita{
+        text-align: right;
+        margin-left:25px;
+        margin-right: 25px;
+        float: right;
+        }
+        
+ /*Aqui sao os estilos da galeria*/
+
+.galeria {
+
+    display: inline-block;
+    margin: 30px;
+    vertical-align: middle;
+    
+    }
+    
+    .centro{
+    text-align: center;
+    }
+
+   
+    
+    
+    /*ESTE E O ESTILO SLIDE-SHOW*/
+    
+    /* Slideshow container */
+    .slideshow-container {
+        position: relative;
+        margin: auto;
+      }
+      
+      /* Hide the images by default */
+      .mySlides {
+          display: none;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: rgb(17, 118, 165);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+      }
+      
+       iframe{
+       border-radius: 10px; 
+     text-align: center;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #88d2f5;
+      }
+      
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      /*quadro*/
+      h2{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        text-align: center;
+        color: #fb91ff;
+        
+        }
+        
+        .p{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        text-align: center;
+        color: #0d0aa9;
+        background-color: #88a4f1;
+        padding: 30px;
+        }
+        
+        .quadro-exemplo{ 
+          background-image: url(fotos/stitch\ sozinho.png);
+        background-color:#88a4f1;
+        width: 350px;
+        display: inline-block;
+        margin: 20px;
+        border-color: #0d0aa9;
+        border-style: solid;
+        border-width: 20px;
+        border-radius: 20px;
+        }
+        
+        .centro{
+        text-align: center;
+        
+        }
+      
+     
+ /* este e o estilo de curso*/
+
+th,td {
+  font-family:Roboto, Arial, sans-serif;
+  font-size: 30px;
+  color: #fb91ff;
+  border-style: solid;
+  border-color: #fb91ff;
+  border-width: 2px;
+  text-align: center;
+  padding: 15px;
+ }
+ 
+ td {
+   font-size: 25px;
+ }
+ 
+ table {
+   border-width: 4px;
+   border-style: solid;
+   border-color:#3d6cee;
+   background-color: #3d6cee;
+   border-spacing: 3px;
+   margin: auto;
+   margin-bottom: 20px;
+
+ }
+ /* estilo efeito */
+.opacidade {
+  box-shadow: -5px 5px 30px;
+  transition: width 2s;
+  transition: opacity 2s;
+}
+
+.opacidade:hover {
+
+width: 450px;
+opacity: 0.3;
+
+}
+.icone { 
+  transition: all 0.4s;
+}
+
+.icone:hover {
+    transform: translateY(-20px);
+    transform: translateX(-20px);
+    transform: rotate(45deg);
+    
+}
+
+nav a {
+  transition: all 0.4s;
+}
+nav a:hover {
+  font-size: 30px;
+}
+
+/* esse e o estilo do cadatro*/
+fieldset{
+  background-color: #bee9fd;
+  border-color:#1959e4;
+
+ }
+ legend{
+  font-family:Roboto, Arial, sans-serif;
+  font-size: 20px;
+  background-color: #bee9fd;
+  color: #fb91ff;
+  font-weight: bold;
+  border-radius: 30px;
+ }
+
+ p {
+font-size: 20px;
+font-weight: bold;
+line-height: 30px;
+}
+form{
+width:700px ;
+margin: auto;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+ 
+.enviar{
+  text-align: right;
+ margin-top: 20px;
+}
